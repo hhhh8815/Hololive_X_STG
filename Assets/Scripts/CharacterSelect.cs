@@ -9,6 +9,10 @@ public class CharacterSelect : MonoBehaviour
     public Button btnCharacter3;
     [Header("角色立繪物件")]
     public GameObject CharacterImgObj;
+    [Header("角色立繪")]
+    public Sprite CharacterImg1;
+    public Sprite CharacterImg2;
+    public Sprite CharacterImg3;
     [Header("角色名字物件")]
     public Text CharacterNameObj;
     [Header("角色介紹物件")]
@@ -70,7 +74,8 @@ public class CharacterSelect : MonoBehaviour
         btnCharacter1.image.color = full;
         btnCharacter2.image.color = half;
         btnCharacter3.image.color = half;
-        
+        CharacterImgObj.GetComponent<Image>().sprite = CharacterImg1;
+
     }
     //選擇角色2時
     public void Character2()
@@ -81,7 +86,8 @@ public class CharacterSelect : MonoBehaviour
         btnCharacter1.image.color = half;
         btnCharacter2.image.color = full;
         btnCharacter3.image.color = half;
-        
+        CharacterImgObj.GetComponent<Image>().sprite = CharacterImg2;
+
     }
     //選擇角色3時
     public void Character3()
@@ -92,7 +98,8 @@ public class CharacterSelect : MonoBehaviour
         btnCharacter1.image.color = half;
         btnCharacter2.image.color = half;
         btnCharacter3.image.color = full;
-        
+        CharacterImgObj.GetComponent<Image>().sprite = CharacterImg3;
+
     }
 
     void NowSelect()
