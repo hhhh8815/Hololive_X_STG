@@ -52,8 +52,8 @@ public class CharacterController : MonoBehaviour
 
     void Update()
     {
-        print("暫停狀態"+stop);
-        print("死亡狀態"+isDead);
+        //print("暫停狀態"+stop);
+        //print("死亡狀態"+isDead);
         //取得flowchat變數值
         flowchatUse = flowchart.GetBooleanVariable("chatOn");
         //當沒有在進行對話時才能動作
@@ -217,7 +217,7 @@ public class CharacterController : MonoBehaviour
     void Dead()
     {
         deadCanvas.SetActive(true);
-        //stop = true;
+        stop = true;
         Time.timeScale = 0;
     }
 
