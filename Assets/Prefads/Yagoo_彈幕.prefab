@@ -99,6 +99,7 @@ MonoBehaviour:
   speed: 1
   shooter: {fileID: 0}
   direction: {x: 0, y: 0}
+  flowchart: {fileID: 0}
   rb: {fileID: 3292552803166457310}
 --- !u!50 &3292552803166457310
 Rigidbody2D:
@@ -115,7 +116,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 0.01
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -145,5 +146,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.176, y: 0.514}
+  m_Size: {x: 0.1408, y: 0.4112}
   m_EdgeRadius: 0
